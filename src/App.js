@@ -1,7 +1,11 @@
-function App() {
-  return (
-    <div><h1>Hello World!</h1></div>
-  );
+import React, { Component} from 'react';
+
+class App extends Component {
+  render() {
+    const greeting = "Hi, Tom!";
+    const dom = <h1 className="foo">{greeting}</h1>;
+    return dom;
+  }
 }
 
 export default App;
